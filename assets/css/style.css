@@ -1,8 +1,10 @@
 :root {
-    --black: #0e0b16;
-    --off-white: #e7dfdd;
-    --fuschia: #a239ca;
-    --plum: #471756;
+    --primary: #99b898;
+    --secondary: #fecea8;
+    --tertiary: #ff847c;
+    --quaternary: #e84a5f;
+    --quinary: #2a363b;
+
   } 
   
   * {
@@ -12,14 +14,15 @@
   }
   
   body {
-      color: var(--fuschia);
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: var(--secondary);
+      background-color: var(--quinary);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   /* Navigation Start */
 header {
-    padding: 20px 35px;
-    background-color: var(--black);
+    padding: 15px 15px;
+    background-color: var(--quinary);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,13 +35,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--off-white);
+    color: var(--secondary);
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: var(--off-white);
+    color: var(--secondary);
 }
 
 header nav {
@@ -60,21 +63,44 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: var(--fuschia);
-  color: var(--page-color);
+  background: var(--secondary);
+  color: var(--primary);
   border-radius: 3px;
 }
 /* Navigation End*/
 
+
+
+/* Jumbotron Section*/
+section {
+    padding: 60px;
+}
+
+.box {
+    background-image: url("../images/jumbotron.png");
+    background-size: cover;
+    margin: 0px;
+    padding: 375px;
+}
+
+.name {
+    background-color: var(--primary);
+    padding: 20px;
+    color: var(--quinary-color);
+    width: 40%;
+    margin: 3.5%;
+    border-radius: 15px;
+}
+
 footer {
-    background: var(--off-white);
+    background: var(--quinary);
     width: 100%;
     padding: 20px 15px;
 
 }
 
 footer h3 {
-    color: var(--plum);
+    color: var(--tertiary);
     font-size: 30px;
     margin: 0;
 }
@@ -85,14 +111,10 @@ footer div {
 }
 
 footer p {
-    color: var(--plum);
+    color: var(--tertiary);
     font-size: 18px;
 }
 
 footer a {
-    color: var(--off-white);
-}
-
-section {
-    padding: 60px;
+    color: var(--tertiary);
 }
