@@ -21,11 +21,10 @@
 
   /* Navigation Start */
 header {
-    padding: 15px 15px;
+    padding: 15px 30px;
     background-color: var(--quinary);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -59,39 +58,68 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-size: 1.5vw;
-    font-weight: lighter;
 }
 
 header nav ul li a:hover {
   background: var(--secondary);
-  color: var(--primary);
+  color: var(--quinary);
   border-radius: 3px;
+  font-weight: bold;
 }
 /* Navigation End*/
 
 
 
-/* Jumbotron Section*/
-section {
-    padding: 60px;
+/* Jumbotron Start*/
+
+.container {
+    position: relative;
 }
 
-.box {
-    background-image: url("../images/jumbotron.png");
-    background-size: cover;
-    margin: 0px;
-    padding: 375px;
+#dot img {
+    width: 25%;
 }
 
-.name {
-    background-color: var(--primary);
-    padding: 20px;
-    color: var(--quinary-color);
-    width: 40%;
-    margin: 3.5%;
+.content img {
+    position: relative;
+    top: 1%;
+    left: 2%;
+    transform: translate(-2%, -56%);
+    width: 28%;
+    height: auto;
     border-radius: 15px;
 }
 
+/* Jumbotron End*/
+
+
+/* About start */
+#about-section {
+    font-size: 20px;
+}
+/* About end */
+
+
+/* Portfolio start */
+#portfolio-section {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.screenshots {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+/* Portfolio end */
+
+
+
+/* Footer start */
 footer {
     background: var(--quinary);
     width: 100%;
@@ -118,3 +146,4 @@ footer p {
 footer a {
     color: var(--tertiary);
 }
+/* Footer end */
