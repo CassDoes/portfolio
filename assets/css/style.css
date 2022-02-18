@@ -71,23 +71,25 @@ header nav ul li a:hover {
 
 
 /* Jumbotron Start*/
-
 .container {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+    padding-bottom: 60px;
 }
 
-#dot img {
-    width: 25%;
+.image {
+    width: 80;
+    flex-basis: 40%;
 }
 
-.content img {
-    position: relative;
-    top: 1%;
-    left: 2%;
-    transform: translate(-2%, -56%);
-    width: 28%;
-    height: auto;
-    border-radius: 15px;
+.text {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.text p {
+    font-size: 22px;
 }
 
 /* Jumbotron End*/
@@ -96,23 +98,22 @@ header nav ul li a:hover {
 /* About start */
 #about-section {
     font-size: 20px;
+    clear: both;
+    padding: 50px;
 }
 /* About end */
 
 
 /* Portfolio start */
-#portfolio-section {
-    font-size: 25px;
-    padding-bottom: 20px;
-}
 
 .screenshots {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+    padding: 50px;
+}
+
+.link-button {
+    box-sizing: border-box;
+    width: fit-content;
+}
 
 
 /* Portfolio end */
