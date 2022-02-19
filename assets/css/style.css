@@ -24,11 +24,11 @@ header {
     padding: 15px 30px;
     background-color: var(--quinary);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 9999;
 }
 
 header h1 {
@@ -106,15 +106,24 @@ header nav ul li a:hover {
 
 /* Portfolio start */
 
-.screenshots {
+.text1 {
     padding: 50px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.flex-row {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-around;
+  }
+
+.flex-row div {
+    margin: 5px;
 }
 
-.link-button {
-    box-sizing: border-box;
-    width: fit-content;
-}
-
+  
 
 /* Portfolio end */
 
@@ -148,3 +157,19 @@ footer a {
     color: var(--tertiary);
 }
 /* Footer end */
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 980px) {
+    header {
+    padding-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    }
+
+    #cover {
+        float: none;
+        width: 100%;
+    }
+}
