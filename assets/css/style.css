@@ -29,6 +29,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -115,15 +116,12 @@ header nav ul li a:hover {
     padding-top: 15px;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: auto;
     justify-content: space-around;
   }
 
 .flex-row div {
     margin: 5px;
 }
-
-  
 
 /* Portfolio end */
 
@@ -161,15 +159,89 @@ footer a {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 980px) {
-    header {
-    padding-bottom: 0;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+    
+    .container {
+        flex-wrap: nowrap;
     }
+
+    .text {
+        padding-left: 20px;
+    }
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    } 
 
     #cover {
         float: none;
         width: 100%;
     }
+
+    #first-project {
+        max-width: 90%;
+        left: 0;
+        right: 0;
+    }
+
+    #first-project img {
+        max-width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .future {
+        max-width: 30%;
+    }
+
+    .future img {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .text {
+        padding-left: 10px;
+    }
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    } 
+
+    #cover {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .text {
+        padding-left: 10px;
+    }
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    } 
+
+    #cover {
+        float: none;
+        width: 100%;
+    }
+
 }
