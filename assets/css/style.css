@@ -24,6 +24,7 @@ header {
     padding: 15px 30px;
     background-color: var(--quinary);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
@@ -33,7 +34,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 40px;
     color: var(--secondary);
     margin: 0;
 }
@@ -57,7 +58,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
 }
 
 header nav ul li a:hover {
@@ -85,7 +86,7 @@ header nav ul li a:hover {
 
 .text {
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .text p {
@@ -97,24 +98,52 @@ header nav ul li a:hover {
 
 /* About start */
 #about-section {
-    font-size: 20px;
     clear: both;
     padding: 50px;
+}
+
+.text1 {
+    font-size: 25px;
+}
+
+#about-section div p {
+    text-align: justify;
+    font-size: 20px;
 }
 /* About end */
 
 
 /* Portfolio start */
+.text2 {
+    padding-left: 50px;
+    font-size: 25px;
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-.screenshots {
-    padding: 50px;
+.flex-row div {
+    margin: 5px;
 }
 
-.link-button {
-    box-sizing: border-box;
-    width: fit-content;
+#first-project {
+    
+    max-width: 95%;
 }
 
+#first-project img {
+    max-width: 100%;
+}
+
+.future {
+    max-width: 45%;
+}
+
+.future img {
+    max-width: 100%;
+}
 
 /* Portfolio end */
 
@@ -148,3 +177,76 @@ footer a {
     color: var(--tertiary);
 }
 /* Footer end */
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 980px) {
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    } 
+
+    header nav ul li a {
+        font-size: 30px;
+    }
+
+    #cover {
+        float: none;
+        width: 100%;
+    }
+
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .text {
+        padding-left: 10px;
+    }
+
+    #first-project {
+        max-width: 90%; 
+    }
+
+    #first-project img {
+        max-width: 100%;
+    }
+
+    .future {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header nav ul li a {
+        font-size: 28px;
+    }
+
+    .container {
+        display: inline;
+    }
+
+    .text {
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 575px) {
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .image img {
+        width: fit-content;
+    }
+
+    .flex-row {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
