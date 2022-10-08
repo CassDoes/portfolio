@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+header nav ul li a:hover {
+  color: #60CFD3;
+}
+
+#underline {
+  color: #60CFD3;
+  text-decoration: underline 3px black;
+  text-underline-offset: 8px;
+}
+
+#underline:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#resume {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 12px;
+}
+
+#resume:hover {
+  background-color: #D1CA26;
+}
